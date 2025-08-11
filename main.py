@@ -1,16 +1,17 @@
-##Hopefully this script should run a simple coin toss game.##
+# Hopefully this script should run a simple coin toss game
 import random
 import time
+
+#Variables
 Heads = ("Heads")
 Tails = ("Tails")
-heads_and_tails = [(Heads),(Tails)]
-Result = random.choice(heads_and_tails)
+Result = random.choice(["Heads","Tails"])
 TimesPlayed = 0
 Score = 0
 ResultsList = []
 
-UserPlaying=input("Do you want to play a game? y/n \n")
-if UserPlaying == ("y"):
+UserPlaying = input("Do you want to play a game? y/n \n")
+if UserPlaying == "y" or "yes":
     PlayTimes = int(input("OK, how many times do you want to play? \n"))
 else:
     print("Thanks for your time, see you later!")
